@@ -1,4 +1,3 @@
-const {createServer} = require("./src/createServer");
+const { createServer } = require("./src/createServer");
 
-createServer()
- 
+createServer();
