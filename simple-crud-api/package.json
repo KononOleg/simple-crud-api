@@ -1,0 +1,17 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "Your task is to implement simple CRUD API using in-memory database underneath.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src --fix ",
+    "prettier": "npx prettier --write ."
+  },
+  "author": "Konon Oleg",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1"
+  }
+}
