@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src --fix ",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "start:dev": "nodemon index"
   },
   "author": "Konon Oleg",
   "license": "ISC",
