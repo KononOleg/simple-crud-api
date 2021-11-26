@@ -7,7 +7,6 @@ const validationURL = (url) => {
     isValidURL = true;
     id = urlArray[2];
   }
-
   return { isValidURL, id };
 };
 
