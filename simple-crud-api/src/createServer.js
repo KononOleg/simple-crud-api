@@ -1,8 +1,9 @@
 const http = require("http");
+
 const { validationURL } = require("./validation");
 const { getPerson, createPerson, deletePerson, updatePerson } = require("./database");
 const { validate } = require("uuid");
-const createServer = () => {
+const createServer = (PORT) => {
   http
     .createServer(async (request, response) => {
       try {
@@ -37,7 +38,7 @@ const createServer = () => {
       }
       response.end();
     })
-    .listen(3000, () => console.log("Server started on PORT 3000"));
+    .listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
 };
 
 module.exports = { createServer };

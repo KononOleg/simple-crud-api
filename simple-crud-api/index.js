@@ -1,3 +1,4 @@
 const { createServer } = require("./src/createServer");
+require("dotenv").config({ path: "./.env" });
 
-createServer();
+createServer(process.env.PORT);
