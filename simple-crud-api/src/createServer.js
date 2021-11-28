@@ -4,7 +4,7 @@ const { validationURL } = require("./validation");
 const { getPerson, createPerson, deletePerson, updatePerson } = require("./database");
 const { validate } = require("uuid");
 const createServer = (PORT) => {
-  http
+  const server = http
     .createServer(async (request, response) => {
       try {
         const { isValidURL, id } = validationURL(request.url);
@@ -36,9 +36,11 @@ const createServer = (PORT) => {
         response.statusCode = 500;
         response.write("Something went wrong");
       }
+
       response.end();
     })
     .listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
+  return server;
 };
 
 module.exports = { createServer };

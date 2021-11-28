@@ -1,10 +1,6 @@
 const { v4 } = require("uuid");
 
-const persons = [
-  { id: v4(), name: "TEST", age: 54, hobbies: ["TEST"] },
-  { id: v4(), name: "TEST", age: 54, hobbies: ["TEST"] },
-];
-
+const persons = [];
 const getPerson = (id, response) => {
   if (!id) {
     response.write(JSON.stringify(persons));

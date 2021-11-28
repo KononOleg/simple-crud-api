@@ -6,14 +6,17 @@
   "scripts": {
     "lint": "eslint src --fix ",
     "prettier": "npx prettier --write .",
-    "start:dev": "nodemon index"
+    "start:dev": "nodemon index",
+    "test": "jest"
   },
   "author": "Konon Oleg",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.2.0",
+    "jest": "^27.3.1",
     "nodemon": "^2.0.15",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "supertest": "^6.1.6"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
