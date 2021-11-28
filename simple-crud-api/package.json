@@ -7,6 +7,8 @@
     "lint": "eslint src --fix ",
     "prettier": "npx prettier --write .",
     "start:dev": "nodemon index",
+    "start:prod": "webpack && nodemon  ./dist/bundle.js",
+    "build": "webpack",
     "test": "jest"
   },
   "author": "Konon Oleg",
@@ -16,7 +18,9 @@
     "jest": "^27.3.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.4.1",
-    "supertest": "^6.1.6"
+    "supertest": "^6.1.6",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
